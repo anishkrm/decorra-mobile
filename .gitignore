@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+.expo/
+/android/
+/ios/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Secrets; keep safe examples versionable
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.keystore
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# Local tooling and temporary output
+.DS_Store
+*.log
+supabase/.temp/
+supabase/.branches/

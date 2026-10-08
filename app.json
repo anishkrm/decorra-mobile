@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "AI Room Makeover",
+    "slug": "ai-room-makeover",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.example.airoommakeover",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.example.airoommakeover",
+      "adaptiveIcon": {
+        "backgroundColor": "#F4EFE7",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a room photo to preview a makeover concept.",
+          "cameraPermission": "Take a room photo to preview a makeover concept.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
